@@ -3,7 +3,7 @@
     "authors":[
         {
             "name": "Rivaldo Treinamentos",
-            "email": "suporte@code.com.br" 
+            "email": "suporte@ricode.com.br" 
         }
     ],
     "require":{
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\hcoder\\php-classes\\src"
+            "": "vendor\\ricoder\\php-classes\\src"
         }
     }
 }

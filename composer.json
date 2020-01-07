@@ -1,0 +1,19 @@
+{
+    "name": "Rivaldo28/ecommerce",
+    "authors":[
+        {
+            "name": "Rivaldo Treinamentos",
+            "email": "suporte@code.com.br" 
+        }
+    ],
+    "require":{
+        "phpmailer/phpmailer":"5.2.22",
+        "slim/slim":"2.0",
+        "rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "vendor\\hcoder\\php-classes\\src"
+        }
+    }
+}

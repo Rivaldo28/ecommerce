@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\ricoder\\php-classes\\src"
+            "Hcode\\": "vendor\\ricoder\\php-classes\\src"
         }
     }
 }

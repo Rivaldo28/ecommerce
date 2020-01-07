@@ -3,11 +3,13 @@
 
  
     $app = new \Slim\Slim();
-    
+    $app->config('debug', true);
 
     // Define app routes
-    $app->get('/', function () {
-        echo "Ok ";
+    $app->get('/', function(){
+        $sql = new Hcode\DB\Sql();
+        $results = $sql->select("SELECT * FROM tb_users");
+        echo json_encode($results);
     });
 
     // Run app

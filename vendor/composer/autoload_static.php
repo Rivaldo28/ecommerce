@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitb049a4554016f778512ff95f75debb15
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/ricoder/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'H' => 
+        array (
+            'Hcode\\' => 6,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Hcode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ricoder/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,7 +51,8 @@ class ComposerStaticInitb049a4554016f778512ff95f75debb15
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInitb049a4554016f778512ff95f75debb15::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb049a4554016f778512ff95f75debb15::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb049a4554016f778512ff95f75debb15::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitb049a4554016f778512ff95f75debb15::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitb049a4554016f778512ff95f75debb15::$classMap;
 

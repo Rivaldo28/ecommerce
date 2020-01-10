@@ -1,17 +1,20 @@
 <?php
-  require_once("vendor/autoload.php");
+  require_once("vendor\autoload.php");
+  
+  $app  = new \Slim\Slim();
 
- 
-    $app = new \Slim\Slim();
     $app->config('debug', true);
 
-    // Define app routes
-    $app->get('/', function(){
-        $sql = new Hcode\DB\Sql();
+    $app->get('/', function() {
+
+        $sql = new Ricode\DB\Sql();
+
         $results = $sql->select("SELECT * FROM tb_users");
+
         echo json_encode($results);
+        
     });
 
-    // Run app
     $app->run();
+
 ?>

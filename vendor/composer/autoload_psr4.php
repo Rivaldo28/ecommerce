@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Hcode\\' => array($vendorDir . '/ricoder/php-classes/src'),
+    'Ricode\\' => array($vendorDir . '/ricoder/php-classes/src'),
 );
